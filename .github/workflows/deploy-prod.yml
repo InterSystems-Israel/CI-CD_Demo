@@ -15,4 +15,4 @@ jobs:
       - name: Compile Hello.cls into PROD IRIS
         run: |
           echo "Running local IRIS compile..."
-          ./iristerm.exe /console=cn_ap:PROD[%SYS] C:\Users\aglikman\Documents\MyProjects\Soraski-Ichilov\CI-CD\myscript.scr"
+          ./iristerm.exe /console=cn_ap:PROD[%SYS] C:\Users\aglikman\Documents\MyProjects\Soraski-Ichilov\CI-CD\myscript.scr
