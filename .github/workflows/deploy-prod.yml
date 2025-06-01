@@ -6,15 +6,13 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Simulate deployment to PROD IRIS
+      - name: Compile Hello.cls into PROD IRIS
         run: |
-          echo "=== START PROD DEPLOY ==="
-          echo "Deploying Hello.cls to PROD IRIS"
-          echo "This is where you would copy files and compile them."
-          echo "=== END PROD DEPLOY ==="
+          echo "Running local IRIS compile..."
+          iris session IRIS -U USER "##class(Demo.CompileAll).Run()"
