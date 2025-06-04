@@ -3,7 +3,7 @@ Class Demo.Hello
 
 ClassMethod SayHi()
 {
-        Write "Hello - This is Ground Control to Major Tom - June 4 9:45", !
+        Write "Hello from IRIS! This is TEST to Major Tom - June 4 9:33", !
 }
 
 }

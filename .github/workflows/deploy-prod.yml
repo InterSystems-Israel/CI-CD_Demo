@@ -1,0 +1,21 @@
+name: Deploy to PROD
+
+on:
+<<<<<<< HEAD
+  workflow_dispatch:   #Manual trigger only
+=======
+  workflow_dispatch:  # <-- enables "Run workflow" button
+>>>>>>> 35a439bc906c5d6373998d2a1ced26114d6d1a77
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Compile Hello.cls into PROD IRIS
+        run: |
+          echo "Running local IRIS compile..."
+          C:\Users\aglikman\Documents\MyProjects\Soraski-Ichilov\CI-CD\PROD_HSHC\bin\iristerm.exe /console=cn_ap:PROD[%SYS] C:\Users\aglikman\Documents\MyProjects\Soraski-Ichilov\CI-CD\myscript.scr
