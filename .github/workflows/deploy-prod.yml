@@ -1,7 +1,11 @@
 name: Deploy to PROD
 
 on:
+<<<<<<< HEAD
+  workflow_dispatch:   #Manual trigger only
+=======
   workflow_dispatch:  # <-- enables "Run workflow" button
+>>>>>>> 35a439bc906c5d6373998d2a1ced26114d6d1a77
 
 jobs:
   deploy:
